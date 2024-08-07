@@ -3,6 +3,7 @@ import './App.css';
 import { AppContainer, AppContentContainer, AppSidebar, MenuIconWrapper, CurrentPageTitle, ContentWrapper, ContentLeftWrapper, AnalyticsWrapper, AnalyticsBox, DashBaordCard, ContentRightWrapper, CommentsCard } from './App.components';
 import DashBaordIcon from './images/dashboard.svg'
 import AvatarIcon from './images/avatar.svg'
+import { Chart } from 'react-charts'
 
 function App() {
   const menuItems = [
@@ -19,6 +20,27 @@ function App() {
       name: 'Summary'
     }
     
+  ]
+  const data =[
+    // {
+    //   label: 'Series 1',
+    //   data: [{ x: 1, y: 10 }, { x: 2, y: 10 }, { x: 3, y: 10 }]
+    // },
+    // {
+    //   label: 'Series 2',
+    //   data: [{ x: 1, y: 10 }, { x: 2, y: 10 }, { x: 3, y: 10 }]
+    // },
+    // {
+    //   label: 'Series 3',
+    //   data: [{ x: 1, y: 10 }, { x: 2, y: 10 }, { x: 3, y: 10 }]
+    // }
+    [[1, 10], [2, 10], [3, 10]],
+      [[1, 10], [2, 10], [3, 10]],
+      [[1, 10], [2, 10], [3, 10]]
+  ]
+  const axes=[
+    { primary: true, type: 'linear', position: 'bottom' },
+    { type: 'linear', position: 'left' }
   ]
   
   return (
@@ -60,6 +82,9 @@ function App() {
                 <p className='analytics-count'>$12k</p>
               </AnalyticsBox>
             </AnalyticsWrapper>
+            <DashBaordCard>
+            <Chart style={{width:"100%",height:"300px"}} data={data} axes={axes} />
+            </DashBaordCard>
             <DashBaordCard>
               <h4 className='dashboard-card-title'>Reports</h4>
               <div className='dashboard-card-content'>
@@ -111,7 +136,7 @@ function App() {
                 </table>
               </div>
             </DashBaordCard>
-            <DashBaordCard>
+            {/* <DashBaordCard>
               <h4 className='dashboard-card-title'>Reports</h4>
               <div className='dashboard-card-content'>
                 <table cellPadding='0' cellSpacing='0'>
@@ -141,7 +166,8 @@ function App() {
                   </tr>
                 </table>
               </div>
-            </DashBaordCard>
+            </DashBaordCard> */}
+           
           </ContentLeftWrapper>
 
           <ContentRightWrapper>
