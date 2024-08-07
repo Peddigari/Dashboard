@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import { AppContainer, AppContentContainer, AppSidebar, MenuIconWrapper, CurrentPageTitle, ContentWrapper, ContentLeftWrapper, AnalyticsWrapper, AnalyticsBox, DashBaordCard, ContentRightWrapper, CommentsCard } from './App.components';
 import DashBaordIcon from './images/dashboard.svg'
@@ -25,7 +25,7 @@ function App() {
     <AppContainer>
       <AppSidebar>
         {menuItems.map((item, index) => (
-          <MenuIconWrapper className={index == 0 ? 'active' : ''} key={item.name} title={item.name}>
+          <MenuIconWrapper className={index === 0 ? 'active' : ''} key={item.name} title={item.name}>
             <img src={item.icon} alt={item.name} />
           </MenuIconWrapper>
         ))}
