@@ -67,7 +67,7 @@ function App() {
                   <tr>
                     <td style={{display:"flex",alignItems:"center"}}>
                       <span style={{marginRight:"10px"}}>
-                        <img style={{width:"30px",height:"30px"}} src={AvatarIcon}></img>
+                        <img style={{width:"30px",height:"30px"}} src={AvatarIcon} alt={AvatarIcon}></img>
                         </span>
                         <span>Hope Mikaelson</span>
                         </td>
@@ -78,7 +78,7 @@ function App() {
                   <tr>
                   <td style={{display:"flex",alignItems:"center"}}>
                       <span style={{marginRight:"10px"}}>
-                        <img style={{width:"30px",height:"30px"}} src={AvatarIcon}></img>
+                        <img style={{width:"30px",height:"30px"}} src={AvatarIcon} alt={AvatarIcon}></img>
                         </span>
                         <span>Hope Mikaelson</span>
                         </td>
@@ -89,7 +89,7 @@ function App() {
                   <tr>
                      <td style={{display:"flex",alignItems:"center"}}>
                       <span style={{marginRight:"10px"}}>
-                        <img style={{width:"30px",height:"30px"}} src={AvatarIcon}></img>
+                        <img style={{width:"30px",height:"30px"}} src={AvatarIcon} alt={AvatarIcon}></img>
                         </span>
                         <span>Hope Mikaelson</span>
                         </td>
@@ -100,7 +100,7 @@ function App() {
                   <tr>
                      <td style={{display:"flex",alignItems:"center"}}>
                       <span style={{marginRight:"10px"}}>
-                        <img style={{width:"30px",height:"30px"}} src={AvatarIcon}></img>
+                        <img style={{width:"30px",height:"30px"}} src={AvatarIcon} alt={AvatarIcon}></img>
                         </span>
                         <span>Hope Mikaelson</span>
                         </td>
